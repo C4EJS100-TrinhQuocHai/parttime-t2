@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        kiểm tra số hoàn hảo ;
+        số hoàn hảo là số có tổng các ước số trừ chính nó mà bằng chính nó.
+        vd: số 6 vì có các ước 1,2,3
+        */
+    //    let number= +prompt("mời nhập số cần kiểm tra!");
+    //    let total=0;
+    //    for (let i = 0; i < number; i++) {
+    //             if(number %i ==0){
+    //                 console.log(i);
+    //                 total+=i;
+    //             }
+    //    }
+    //    console.log("total", total);
+    //    if(total == number){
+    //         console.log("là số hoàn hảo");
+    //    }else{
+    //         console.log("không phải là số hoàn hảo");
+    //    }
+    /* 
+    bài 2: nhập n số nguyên dương in ra tổng các số vừa nhập.
+
+     
+      /* 
+      kiểu dữ liệu nguyên thuỷ: null, undefined, NaN, Symbol,number,boolean, string
+      kiểu dữ liệu phức tạp (tham chiếu ) : object, array
+       */
+    //   let a=6;
+    //   b=a;
+    //   a=8;
+    //   console.log("b:",b);
+
+    //   let array=[2,5];
+    //     arr1=array;
+    //     array.push(5);
+    //     console.log("arrsy1", arr1);
+    // let listNumber= [5,8,9,6,7,9]; // cách 1
+    // console.log("listNumber", listNumber.length);
+    // console.log(listNumber[listNumber.length-1]);
+    // console.log(listNumber[2]);
+    // let newArr= new Array(1,2,3,4); // cách 2
+    // console.log("newArray", newArr);
+    //đếm số phần tử trong mảng length
+    // 
+    // let arr=[[0,6],[1,2]];
+    // console.log(arr[0][1]);
+    // let newArray=new Array(new Array(0,6),new Array(1,2));
+    // console.log(newArray);
+    /* 
+    các hàm làm việc với mảng :
+    1.push thêm phần tử vào cuối mảng!.
+    2. POP xoá phần tử cuối cùng của mảng!.
+    3.unshift thêm phần tử vào đầu mảng.
+    4.shift xoá phần tử đầu tiên của mảng!
+    5. concat. gộp mảng.
+    6.indexOF .trả về vị trí phần tử.
+    7.includes .trả về vị trí phần tử.
+    8.join  chuyển mảng thành string
+    9.reverse đảo ngược mảng
+    10.sort sắp xếp các phần tử trong mảng.
+    11. slice sao chép sang 1 mảng mới .
+    12. splice tương tác với mảng ban đầu.
+     */
+    
+    
+// 1,2,34,5,6
+
+    // let result= [...listNumber1,...listNumber2];
+    // console.log(listNumber2.concat(listNumber3, listNumber1));
+    // let arr = [1, 8, 3, 7, 5,11] ; //[1,2,1,2,5]
+    //  console.log(arr.splice(2,1,6));
+    //  console.log(arr);
+// CRUD  
+/* 
+C :create
+R: Read
+U: update
+D: Delete
+ */
+
+// for (let i = 0; i < listUser.length; i++) { //i=0; i<6
+//     console.log(listUser[i]);
+    
+// }
+// for (const key in listUser) {
+//         console.log(key);
+// }
+// for (const hello of listUser) {
+//     console.log(hello);
+// }
+// các hàm làm việc với mảng
+
+
+//Bài 1: [8,9,5,4,6,4,7,55,77] tìm phần tử lớn nhất trong mảng.
+//Bài 2 : sắp xếp các pt trong mảng theo chiều tăng dần [5,88,77,4,2,99,65];
+// Bài 3: loại bỏ các phần tử trùng nhau trong mảng [1,1,1,1,5,5,5,4,8,4,4];
+let tienGui=+prompt("mời nhập số tiền cần gửi");
+let soLaiSuat=+prompt("mời nhập lãi suất trên năm");
+let soThang= +prompt("mời nhập số tháng gửi tiền cần gửi");
+
+for (let i = 1; i <= soThang; i++) {
+ let bienDong= (tienGui*soLaiSuat)/1200;
+ console.log("biendong", bienDong);
+   tienGui=tienGui+bienDong;
+   
+}
+
+console.log("result", tienGui);
+
+    </script>
+</body>
+</html>
